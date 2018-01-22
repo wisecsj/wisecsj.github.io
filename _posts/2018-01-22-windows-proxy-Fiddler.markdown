@@ -2,7 +2,7 @@
 layout:     post
 title:      "How Fiddler works with other proxy on Windows"
 subtitle:   "Dial-up/VPN Proxy and LAN Settings"
-date:       2018-01-17 23:00:00
+date:       2018-01-22 18:00:00
 author:     "wisecsj"
 header-img: "img/post-bg-2015.jpg"
 tags:
