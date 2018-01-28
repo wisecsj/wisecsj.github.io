@@ -50,10 +50,10 @@ with open('test2.py','a+') as f:
 
 
 """ 
-@author: W@I@S@E </br>
-@contact: wisecsj@gmail.com </br>
-@site: https://wisecsj.github.io </br>
-@file: server.py </br>
+@author: W@I@S@E 
+@contact: wisecsj@gmail.com 
+@site: https://wisecsj.github.io 
+@file: server.py 
 """
 import os, sys
 import argparse
@@ -162,4 +162,7 @@ if __name__ == '__main__':
     s.run()
 
 ```
+
+
+**PS：** 有人知道为啥上面代码""" """内的一些文件和作者信息显示为啥不换行么？看着好难受。在简书和VSCode的markdown预览是可以正常换行显示的。 - -
 
