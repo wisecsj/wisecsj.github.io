@@ -19,15 +19,12 @@ tags:
 
 1. Python编写命令行程序库的选择，优先选 [argparse](https://docs.python.org/3/howto/argparse.html#id1)
 
-2. 因为argparse会自动为我们添加optional options，与题目要求会冲突。解决办法也很简单,禁用**add_help**：
-
-` p = argparse.ArgumentParser(add_help=False)`
+2. 因为argparse会自动为我们添加optional options，与题目要求会冲突。解决办法也很简单,禁用**add_help**：`p = argparse.ArgumentParser(add_help=False)`
 
 3. 题目要求的是支持 `server.py add -h 127.0.0.1 -u shiyanlou -p shiyanlou`这种方式的调用。命令的开头是没有Python的。所以你必须得在代码的第一行加上 `#! /usr/bin/python3 `。
 
-4. VSCode如何对这种命令行参数的应用进行调试：修改lanuch.json，添加args字段，如下：
-
-![launch.json](/img/in-post/post-cli-argparse/VSCode-config.png)
+4. VSCode如何对这种命令行参数的应用进行调试：修改lanuch.json，添加args字段，如下所示：
+![launch.json](/img/in-post/post-cli-argparse/VSCode_config.png)
 
 5. 
 ```
@@ -44,6 +41,7 @@ with open('test2.py','a+') as f:
 
 ## 题解
 
+
 ```
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
@@ -51,10 +49,15 @@ with open('test2.py','a+') as f:
 
 """ 
 @author: W@I@S@E 
+
 @contact: wisecsj@gmail.com 
+
 @site: https://wisecsj.github.io 
+
 @file: server.py 
+
 @time: 2018/1/20 19:19 
+
 """
 import os, sys
 import argparse
