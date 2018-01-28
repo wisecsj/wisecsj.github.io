@@ -50,13 +50,10 @@ with open('test2.py','a+') as f:
 
 
 """ 
-@author: W@I@S@E<br>
-@contact: wisecsj@gmail.com<br>
-@site: https://wisecsj.github.io<br>
-@file: server.py<br>
-@time: 2018/1/20 19:19
-
-
+@author: W@I@S@E </br>
+@contact: wisecsj@gmail.com </br>
+@site: https://wisecsj.github.io </br>
+@file: server.py </br>
 """
 import os, sys
 import argparse
