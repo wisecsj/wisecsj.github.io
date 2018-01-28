@@ -36,6 +36,8 @@ with open('test2.py','a+') as f:
 上面的代码，执行你会发现没有输出。原因是当你以mode a+ 打开一个文件的时候：
 > The file pointer is at the end of the file if the file exists.
 
+[File Mode](https://stackoverflow.com/a/23566951)
+
 所以你得先 `f.seek(0)`(将文件指针移到开头)
 
 
@@ -48,20 +50,12 @@ with open('test2.py','a+') as f:
 
 
 """ 
-@author: W@I@S@E 
-
-
-@contact: wisecsj@gmail.com 
-
-
-@site: https://wisecsj.github.io 
-
-
-@file: server.py 
-
-
+@author: W@I@S@E
+@contact: wisecsj@gmail.com
+@site: https://wisecsj.github.io
+@file: server.py
 @time: 2018/1/20 19:19
- 
+
 
 """
 import os, sys
