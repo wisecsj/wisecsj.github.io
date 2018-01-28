@@ -50,13 +50,18 @@ with open('test2.py','a+') as f:
 """ 
 @author: W@I@S@E 
 
+
 @contact: wisecsj@gmail.com 
+
 
 @site: https://wisecsj.github.io 
 
+
 @file: server.py 
 
-@time: 2018/1/20 19:19 
+
+@time: 2018/1/20 19:19
+ 
 
 """
 import os, sys
