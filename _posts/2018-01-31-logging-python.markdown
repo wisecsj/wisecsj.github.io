@@ -26,7 +26,7 @@ Logging是用来track在软件运行过程中事件的发生的。软件工程�
 
 我们可以声明事件的重要性，一般称作等级（level）或者严重程度(severity)。
 
-![Five Level Introduction](/img/post-logging/five_level.png)
+![Five Level Introduction](/img/in-post/post-logging/five_level.png)
 
 **Note**: 默认进行处理的level是WARNING，只有高于或等于此等级的日志会被track.
 
@@ -43,10 +43,9 @@ try:
 except Exception as e:
     logger.exception('something error')
 ```
-
 `exception`实质是对logger.error的封装，设置参数`exc_info = True`。
 
-所以如果我们有比较奇葩的需求，譬如在 info level 也打印异常信息怎么办：`logger.info(msg,exc_info=True)`
+所以如果我们有比较奇葩的需求，譬如在 info level 也打印异常信息怎么办：`logger.info(msg,exc_info=True)`.
 
 * 另一个也很常见的需求是，我们需要把日志保存到文件，方便调试和排查错误。一开始是只有**FileHandler**的，但是在生产环境中，日志文件大小会增长。所以后来有了[RotatingFileHandler](https://docs.python.org/3/library/logging.handlers.html#rotatingfilehandler)以及[TimedRotatingFileHandler](https://docs.python.org/3/library/logging.handlers.html#rotatingfilehandler).
 前者可以通过设置 maxBytes 来使得文件大小不超过此字节数；后者可以通过设置间隔或特定时间点来更新（生成新的）日志文件。
