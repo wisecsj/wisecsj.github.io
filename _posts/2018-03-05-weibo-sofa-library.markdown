@@ -32,8 +32,10 @@ tags:
 
 # Usage
 
-1. Write run.py：
+1.Write run.py：
+
 ```
+
 # coding=utf-8
 
 from weibo import Client
@@ -46,9 +48,10 @@ client = Client(usr, pwd, 'config')
 print('start run ')
 client.run()
 print('run over')
+
 ```
 
-2. Write `config`:
+2.Write `config`:
 ```
 RECORD_PATH = 'record'
 
@@ -73,7 +76,7 @@ UID = ['3779018282'，’3779018282']
 
 NOTE : 在Linux OS 上，你可以在terminal内，输入命令`weibo add -u uid_you_want_add -p record_filepath`来在程序运行时动态添加删除uid
 
-3. Run run.py,and the result:
+3.Run run.py,and the result:
 
 ![](/img/in-post/post-weibo-sofa/weibo_result.png)
 
