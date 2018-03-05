@@ -122,6 +122,23 @@ NOTE : 在Linux OS 上，你可以在terminal内，输入命令`weibo add -u uid
 
 并且，因为是在程序运行过程中，对`record`文件进行修改，所以需要对文件加锁（`import fcntl` only worked on Linux )
 
+5.抓包请求
+
+在想要通过Fiddler抓包程序通过requests发出的请求时，会发生出错。
+
+这是因为未设置代理和CA证书导致的，解决办法：
+
+```
+    self.ses.proxies = {
+        'http': "http://127.0.0.1:8888",
+        'https': "http://127.0.0.1:8888",
+    }
+    self.ses.verify = r'C:\Users\34398\Desktop\FiddlerRoot.pem'
+```
+
+PS: Fiddler默认导出的证书为.cer后缀，但是我这必须得转成.pem格式，requests才能正常识别工作（https://www.chinassl.net/ssltools/convert-ssl.html）。
+
+
 
 ## Todos
 
